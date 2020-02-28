@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -14,7 +16,6 @@
     "tutorial",
     "demo"
   ],
-  "dist": "npm run build && build --publish onTagOrDraft",
   "build": {
     "appId": "org.breta.MemoryKing",
     "category": "public.app-category.education",
