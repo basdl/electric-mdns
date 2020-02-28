@@ -1,4 +1,7 @@
 os: unstable
+environment:
+  GH_TOKEN:
+    secure: uQieiOhGw4JNGcsoEmi1oz6Az9hezTwb37fmgRhR81VhiN5tJ5LxXN04b0nY5HMV
 cache:
   - node_modules
 environment:
