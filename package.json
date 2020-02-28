@@ -14,9 +14,49 @@
     "tutorial",
     "demo"
   ],
+  "dist": "npm run build && build --publish onTagOrDraft",
+  "build": {
+    "appId": "org.breta.MemoryKing",
+    "category": "public.app-category.education",
+    "files": [
+      "dist/",
+      "node_modules/",
+      "static/",
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  },
+  "directories": {
+    "output": "release"
+  },
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^8.0.2"
+    "electron": "^8.0.2",
+    "electron-builder": "^22.3.2"
   }
 }
