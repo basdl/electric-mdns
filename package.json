@@ -53,7 +53,10 @@
       ]
     }
   },
-  "author": "GitHub",
+  "author": {
+    "name": "Bastian Huber",
+    "email": "basld@github.com"
+  },
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^8.0.2",
