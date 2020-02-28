@@ -21,7 +21,6 @@
     "directories": {
       "output": "release"
     },
-    "category": "public.app-category.education",
     "files": [
       "dist/",
       "node_modules/",
