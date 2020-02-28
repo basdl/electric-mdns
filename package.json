@@ -18,6 +18,9 @@
   ],
   "build": {
     "appId": "org.breta.MemoryKing",
+    "directories": {
+      "output": "release"
+    },
     "category": "public.app-category.education",
     "files": [
       "dist/",
@@ -50,9 +53,6 @@
         "deb"
       ]
     }
-  },
-  "directories": {
-    "output": "release"
   },
   "author": "GitHub",
   "license": "CC0-1.0",
